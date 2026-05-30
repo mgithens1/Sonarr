@@ -15,16 +15,19 @@ namespace Sonarr.Http.Frontend
     {
         private readonly IConfigFileProvider _configFileProvider;
         private readonly IAnalyticsService _analyticsService;
+        private readonly IConfigService _configService;
 
         private static string _apiKey;
         private static string _urlBase;
         private string _generatedContent;
 
         public InitializeJsonController(IConfigFileProvider configFileProvider,
-                                      IAnalyticsService analyticsService)
+                                      IAnalyticsService analyticsService,
+                                      IConfigService configService)
         {
             _configFileProvider = configFileProvider;
             _analyticsService = analyticsService;
+            _configService = configService;
 
             _apiKey = configFileProvider.ApiKey;
             _urlBase = configFileProvider.UrlBase;
