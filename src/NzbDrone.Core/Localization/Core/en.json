@@ -614,6 +614,8 @@
   "EnableAutomaticSearchHelpTextWarning": "Will be used when interactive search is used",
   "EnableColorImpairedMode": "Enable Color-Impaired Mode",
   "EnableColorImpairedModeHelpText": "Altered style to allow color-impaired users to better distinguish color coded information",
+  "ShowLoadingMessages": "Show Loading Messages",
+  "ShowLoadingMessagesHelpText": "Show humorous messages while the app is loading; when disabled, a simple 'Loading' message is shown",
   "EnableCompletedDownloadHandlingHelpText": "Automatically import completed downloads from download client",
   "EnableHelpText": "Enable metadata file creation for this metadata type",
   "EnableInteractiveSearch": "Enable Interactive Search",

@@ -16,6 +16,7 @@ namespace Sonarr.Api.V3.Config
         public bool ShowRelativeDates { get; set; }
 
         public bool EnableColorImpairedMode { get; set; }
+        public bool ShowLoadingMessages { get; set; }
         public string Theme { get; set; }
         public int UILanguage { get; set; }
     }
@@ -35,6 +36,7 @@ namespace Sonarr.Api.V3.Config
                 ShowRelativeDates = model.ShowRelativeDates,
 
                 EnableColorImpairedMode = model.EnableColorImpairedMode,
+                ShowLoadingMessages = model.ShowLoadingMessages,
                 Theme = config.Theme,
                 UILanguage = model.UILanguage
             };

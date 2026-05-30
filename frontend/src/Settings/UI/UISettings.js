@@ -207,6 +207,17 @@ class UISettings extends Component {
                       {...settings.enableColorImpairedMode}
                     />
                   </FormGroup>
+
+                  <FormGroup>
+                    <FormLabel>{translate('ShowLoadingMessages')}</FormLabel>
+                    <FormInputGroup
+                      type={inputTypes.CHECK}
+                      name="showLoadingMessages"
+                      helpText={translate('ShowLoadingMessagesHelpText')}
+                      onChange={onInputChange}
+                      {...settings.showLoadingMessages}
+                    />
+                  </FormGroup>
                 </FieldSet>
 
                 <FieldSet legend={translate('Language')}>

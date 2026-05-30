@@ -51,6 +51,7 @@ namespace Sonarr.Http.Frontend
             builder.AppendLine($"  \"version\": \"{BuildInfo.Version.ToString()}\",");
             builder.AppendLine($"  \"instanceName\": \"{_configFileProvider.InstanceName.ToString()}\",");
             builder.AppendLine($"  \"theme\": \"{_configFileProvider.Theme.ToString()}\",");
+            builder.AppendLine($"  \"showLoadingMessages\": {_configService.ShowLoadingMessages.ToString().ToLowerInvariant()},");
             builder.AppendLine($"  \"branch\": \"{_configFileProvider.Branch.ToLower()}\",");
             builder.AppendLine($"  \"analytics\": {_analyticsService.IsEnabled.ToString().ToLowerInvariant()},");
             builder.AppendLine($"  \"userHash\": \"{HashUtil.AnonymousToken()}\",");

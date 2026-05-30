@@ -9,5 +9,6 @@ interface Window {
     urlBase: string;
     version: string;
     isProduction: boolean;
+    showLoadingMessages: boolean;
   };
 }

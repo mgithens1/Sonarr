@@ -339,6 +339,13 @@ namespace NzbDrone.Core.Configuration
             set { SetValue("EnableColorImpairedMode", value); }
         }
 
+        public bool ShowLoadingMessages
+        {
+            get { return GetValueBoolean("ShowLoadingMessages", true); }
+
+            set { SetValue("ShowLoadingMessages", value); }
+        }
+
         public int UILanguage
         {
             get { return GetValueInt("UILanguage", (int)Language.English); }

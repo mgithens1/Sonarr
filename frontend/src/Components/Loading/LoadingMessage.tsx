@@ -25,6 +25,12 @@ const messages = [
 let message: string | null = null;
 
 function LoadingMessage() {
+  const showMessages = window.Sonarr?.showLoadingMessages !== false;
+
+  if (!showMessages) {
+    return <div className={styles.loadingMessage}>Loading</div>;
+  }
+
   if (!message) {
     const index = Math.floor(Math.random() * messages.length);
     message = messages[index];
